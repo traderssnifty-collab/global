@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL SERVICES | International Recruitment & Workforce Mobility Solutions</title>
+    <meta name="description" content="Global Services is a premier international recruitment agency specializing in manpower supply for Saudi Arabia, UAE, Qatar, and Central Asia.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .whatsapp-btn, .telegram-btn {
+            position: fixed;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn { bottom: 30px; background-color: #25d366; }
+        .telegram-btn { bottom: 100px; background-color: #0088cc; }
+        .whatsapp-btn:hover { background-color: #128c7e; transform: scale(1.1); }
+        .telegram-btn:hover { background-color: #0077b5; transform: scale(1.1); }
+        .whatsapp-icon, .telegram-icon { width: 35px; height: 35px; fill: #fff; }
+
+        /* Key Workforce Categories Animations */
+        .category-flex span {
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.6s ease-out both;
+            cursor: default;
+        }
+
+        .category-flex span:hover {
+            transform: translateY(-8px);
+            background-color: #c5a021 !important; /* Gold hover state */
+            color: #fff !important;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Staggered entrance animation delays */
+        .category-flex span:nth-child(1) { animation-delay: 0.1s; }
+        .category-flex span:nth-child(2) { animation-delay: 0.15s; }
+        .category-flex span:nth-child(3) { animation-delay: 0.2s; }
+        .category-flex span:nth-child(4) { animation-delay: 0.25s; }
+        .category-flex span:nth-child(5) { animation-delay: 0.3s; }
+        .category-flex span:nth-child(6) { animation-delay: 0.35s; }
+        .category-flex span:nth-child(7) { animation-delay: 0.4s; }
+        .category-flex span:nth-child(8) { animation-delay: 0.45s; }
+        .category-flex span:nth-child(9) { animation-delay: 0.5s; }
+        .category-flex span:nth-child(10) { animation-delay: 0.55s; }
+        .category-flex span:nth-child(11) { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">GLOBAL <span class="gold-text">SERVICES</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="employer-registration.html">Employers</a>
+                <a href="#services">Services</a>
+                <a href="#industries">Industries</a>
+                <a href="#job-seekers">Job Seekers</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="request-manpower.html" class="btn btn-outline">Request Manpower</a>
+                <a href="employer-registration.html" class="btn btn-gold">Employer Registration</a>
+                <div class="language-switcher">
+                    <button class="lang-btn active">EN</button>
+                    <button class="lang-btn">العربية</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>International Recruitment & <br><span class="gold-text">Workforce Mobility Solutions</span></h1>
+                <p>Connecting employers with qualified workforce across Gulf countries, Central Asia, and international markets.</p>
+                <div class="hero-ctas">
+                    <a href="request-manpower.html" class="btn btn-gold btn-lg">Request Manpower</a>
+                    <a href="employer-registration.html" class="btn btn-white btn-lg">Employer Registration (Free)</a>
+                </div>
+            </div>
+            <div class="hero-form">
+                <div class="form-container shadow">
+                    <h3>Quick Request Manpower</h3>
+                    <form id="quickRequestForm" class="grid-form">
+                        <input type="text" name="companyName" placeholder="Company Name" required>
+                        <input type="text" name="contactPerson" placeholder="Contact Person" required>
+                        <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <textarea name="position" placeholder="Position(s) Required and Quantity (e.g., 50 Electricians, 20 Plumbers...)" rows="3" required></textarea>
+                        <button type="submit" class="btn btn-navy btn-block">Submit Requirement</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="markets-section">
+        <div class="container">
+            <h2 class="section-title">Global Reach, Local Expertise</h2>
+            <div class="market-grid">
+                <div class="market-category">
+                    <h4>Primary Gulf Markets</h4>
+                    <div class="market-tags">
+                        <span>Saudi Arabia</span><span>UAE</span><span>Qatar</span><span>Kuwait</span><span>Bahrain</span><span>Oman</span>
+                    </div>
+                </div>
+                <div class="market-category">
+                    <h4>Emerging Markets</h4>
+                    <div class="market-tags">
+                        <span>Kazakhstan</span><span>Azerbaijan</span><span>Kyrgyzstan</span><span>Uzbekistan</span><span>Georgia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="industries" class="industry-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <div class="industry-grid">
+                <div class="industry-card"><h4>Construction & Infrastructure</h4></div>
+                <div class="industry-card"><h4>Oil & Gas</h4></div>
+                <div class="industry-card"><h4>Maintenance & Operations</h4></div>
+                <div class="industry-card"><h4>Facilities Management</h4></div>
+                <div class="industry-card"><h4>Manufacturing</h4></div>
+                <div class="industry-card"><h4>Logistics & Transportation</h4></div>
+                <div class="industry-card"><h4>Healthcare</h4></div>
+                <div class="industry-card"><h4>Hospitality</h4></div>
+                <div class="industry-card"><h4>Technical Services</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workforce-section">
+        <div class="container">
+            <h2 class="section-title">Key Workforce Categories</h2>
+            <div class="category-flex">
+                <span>Engineers</span><span>Supervisors</span><span>Electricians</span><span>Plumbers</span>
+                <span>Welders</span><span>Fabricators</span><span>HVAC Technicians</span><span>Plant Operators</span>
+                <span>Drivers</span><span>Nurses</span><span>Hospitality Staff</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="job-seekers" class="job-seekers-section bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Are You a Job Seeker?</h2>
+            <p>Access premium international opportunities in the Gulf, Central Asia, and beyond. We connect skilled professionals with industry leaders.</p>
+            <div class="job-seeker-cta" style="margin-top: 30px;">
+                <a href="candidate-registration.html" class="btn btn-navy btn-lg">Register as Candidate</a>
+                <p style="margin-top: 15px; font-size: 0.85rem; color: var(--slate);">Build your profile and let our recruitment experts find the right role for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us bg-navy text-white">
+        <div class="container">
+            <h2 class="section-title white">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h4>Global Talent Access</h4>
+                    <p>Proprietary databases and recruitment hubs across multiple continents.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Fast Turnaround</h4>
+                    <p>Efficient mobilization processes to meet tight project deadlines.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Pre-Screened Candidates</h4>
+                    <p>Rigorous technical vetting and background checks before submission.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Industry Expertise</h4>
+                    <p>Recruiters who understand the technical nuances of your sector.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>End-to-End Support</h4>
+                    <p>Handling everything from trade testing to flight deployment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="container">
+            <h2 class="section-title">Our Recruitment Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <span class="step-num">01</span>
+                    <h5>Requirement Received</h5>
+                </div>
+                <div class="step">
+                    <span class="step-num">02</span>
+                    <h5>Candidate Sourcing</h5>
+                </div>
+                <div class="step">
+                    <span class="step-num">03</span>
+                    <h5>Screening & Shortlisting</h5>
+                </div>
+                <div class="step">
+                    <span class="step-num">04</span>
+                    <h5>Interviews</h5>
+                </div>
+                <div class="step">
+                    <span class="step-num">05</span>
+                    <h5>Documentation</h5>
+                </div>
+                <div class="step">
+                    <span class="step-num">06</span>
+                    <h5>Deployment</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container text-center">
+            <h2>Partner with the International Experts</h2>
+            <p>Access pre-vetted, qualified manpower for your next project.</p>
+            <a href="employer-registration.html" class="btn btn-gold btn-lg">Register Company Free</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title left">Contact Us</h2>
+                    <p>Connect with our mobility experts today.</p>
+                    <div class="info-links">
+                        <a href="https://wa.me/1234567890">WhatsApp: +1 234 567 890</a>
+                        <a href="mailto:info@globalservices.com">Email: info@globalservices.com</a>
+                        <span>Office: Dubai, Riyadh, Almaty</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-navy btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo">GLOBAL SERVICES</div>
+            <p>&copy; 2024 Global Services. International Recruitment & Workforce Mobility Solutions.</p>
+        </div>
+    </footer>
+
+    <a href="https://t.me/yourusername" class="telegram-btn" target="_blank" aria-label="Chat on Telegram">
+        <svg viewBox="0 0 32 32" class="telegram-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zm7.859 10.974l-2.627 12.381c-.194.877-.716 1.091-1.445.677l-4-2.947-1.928 1.858c-.213.213-.393.393-.806.393l.284-4.051 7.373-6.664c.32-.284-.072-.44-.493-.16l-9.113 5.742-3.924-1.227c-.853-.267-.867-.853.18-1.261l15.343-5.917c.707-.253 1.325.174 1.056 1.327z" fill="currentColor"/></svg>
+    </a>
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.788l-2.016 7.412 7.588-1.991c2.251 1.189 4.814 1.866 7.544 1.866 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.273c-2.433 0-4.711-0.647-6.678-1.776l-0.479-0.274-4.482 1.175 1.196-4.39-0.301-0.479c-1.258-1.999-1.991-4.364-1.991-6.901 0-7.23 5.879-13.11 13.11-13.11s13.11 5.879 13.11 13.11c0 7.23-5.88 13.11-13.11 13.11zM22.51 19.33c-0.357-0.179-2.112-1.041-2.446-1.163-0.334-0.123-0.578-0.183-0.821 0.183s-0.942 1.163-1.155 1.404c-0.213 0.241-0.426 0.271-0.783 0.091-0.357-0.18-1.507-0.556-2.871-1.773-1.061-0.946-1.777-2.115-1.986-2.472-0.208-0.357-0.022-0.55 0.158-0.728 0.162-0.16 0.357-0.417 0.536-0.625 0.179-0.208 0.238-0.357 0.357-0.595 0.119-0.238 0.059-0.446-0.030-0.625s-0.821-1.979-1.126-2.714c-0.297-0.714-0.598-0.618-0.821-0.629l-0.7-0.012c-0.241 0-0.634 0.091-0.965 0.456s-1.264 1.238-1.264 3.017c0 1.779 1.294 3.5 1.474 3.738s2.546 3.887 6.168 5.451c0.861 0.372 1.533 0.595 2.058 0.762 0.865 0.275 1.652 0.236 2.275 0.143 0.695-0.104 2.112-0.863 2.411-1.696s0.299-1.547 0.21-1.696c-0.091-0.149-0.331-0.239-0.688-0.418z" fill="currentColor"/></svg>
+    </a>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
