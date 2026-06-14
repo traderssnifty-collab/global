@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Manpower | GLOBAL SERVICES</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .whatsapp-btn, .telegram-btn {
+            position: fixed;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn { bottom: 30px; background-color: #25d366; }
+        .telegram-btn { bottom: 100px; background-color: #0088cc; }
+        .whatsapp-btn:hover { background-color: #128c7e; transform: scale(1.1); }
+        .telegram-btn:hover { background-color: #0077b5; transform: scale(1.1); }
+        .whatsapp-icon, .telegram-icon { width: 35px; height: 35px; fill: #fff; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo"><a href="index.html">GLOBAL <span class="gold-text">SERVICES</span></a></div>
+            <div class="header-actions">
+                <a href="employer-registration.html" class="btn btn-outline">Employer Registration</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Request Manpower</h1>
+            <p>Submit your high-value requirements for a customized recruitment proposal.</p>
+        </div>
+    </section>
+
+    <section class="request-form-page">
+        <div class="container">
+            <div class="form-container shadow" style="max-width: 900px; margin: 0 auto;">
+                <form id="manpowerRequestForm" class="grid-form">
+                    <div class="form-section">
+                        <h4>Client Details</h4>
+                        <div class="form-row">
+                            <input type="text" name="companyName" placeholder="Company Name" required>
+                            <input type="text" name="contactPerson" placeholder="Contact Person" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="designation" placeholder="Designation">
+                            <input type="email" name="email" placeholder="Business Email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" name="whatsapp" placeholder="WhatsApp Number" required>
+                            <input type="text" name="country" placeholder="Project Country" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Requirement Specifications</h4>
+                        <div class="form-row">
+                            <input type="text" name="industry" placeholder="Industry" required>
+                            <input type="text" name="position" placeholder="Position Required" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="number" name="count" placeholder="Number of Workers" required>
+                            <input type="text" name="requiredDate" placeholder="Required By Date (MM/YY)">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>Additional Logistics & Terms</h4>
+                        <div class="form-row">
+                            <select name="ticket">
+                                <option value="">First Travel Ticket Provided?</option>
+                                <option>Yes</option><option>No</option><option>To Be Discussed</option>
+                            </select>
+                            <select name="serviceCharges">
+                                <option value="">Recruitment Service Charges</option>
+                                <option>Company Sponsored</option>
+                                <option>Proposal Required</option>
+                                <option>To Be Discussed</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <select name="accommodation">
+                                <option value="">Accommodation Provided?</option>
+                                <option>Yes</option><option>No</option><option>To Be Discussed</option>
+                            </select>
+                            <select name="transport">
+                                <option value="">Transportation Provided?</option>
+                                <option>Yes</option><option>No</option><option>To Be Discussed</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <select name="medical">
+                                <option value="">Medical Insurance Provided?</option>
+                                <option>Yes</option><option>No</option><option>To Be Discussed</option>
+                            </select>
+                            <select name="visaStatus">
+                                <option value="">Visa Status</option>
+                                <option>Visa Available</option><option>Visa In Process</option><option>Visa Application Planned</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <select name="duration">
+                                <option value="">Project Duration</option>
+                                <option>Less than 6 Months</option>
+                                <option>6-12 Months</option>
+                                <option>1-2 Years</option>
+                                <option>Long-Term Requirement</option>
+                            </select>
+                        </div>
+                        <textarea name="notes" placeholder="Additional Notes (e.g. Salary range, skills required)" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-navy btn-block btn-lg">Submit Formal Requirement</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo">GLOBAL SERVICES</div>
+            <p>&copy; 2024 Global Services. International Recruitment & Workforce Mobility Solutions.</p>
+        </div>
+    </footer>
+    <a href="https://t.me/yourusername" class="telegram-btn" target="_blank" aria-label="Chat on Telegram">
+        <svg viewBox="0 0 32 32" class="telegram-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zm7.859 10.974l-2.627 12.381c-.194.877-.716 1.091-1.445.677l-4-2.947-1.928 1.858c-.213.213-.393.393-.806.393l.284-4.051 7.373-6.664c.32-.284-.072-.44-.493-.16l-9.113 5.742-3.924-1.227c-.853-.267-.867-.853.18-1.261l15.343-5.917c.707-.253 1.325.174 1.056 1.327z" fill="currentColor"/></svg>
+    </a>
+    <a href="https://wa.me/1234567890" class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.733 5.476 2.016 7.788l-2.016 7.412 7.588-1.991c2.251 1.189 4.814 1.866 7.544 1.866 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.273c-2.433 0-4.711-0.647-6.678-1.776l-0.479-0.274-4.482 1.175 1.196-4.39-0.301-0.479c-1.258-1.999-1.991-4.364-1.991-6.901 0-7.23 5.879-13.11 13.11-13.11s13.11 5.879 13.11 13.11c0 7.23-5.88 13.11-13.11 13.11zM22.51 19.33c-0.357-0.179-2.112-1.041-2.446-1.163-0.334-0.123-0.578-0.183-0.821 0.183s-0.942 1.163-1.155 1.404c-0.213 0.241-0.426 0.271-0.783 0.091-0.357-0.18-1.507-0.556-2.871-1.773-1.061-0.946-1.777-2.115-1.986-2.472-0.208-0.357-0.022-0.55 0.158-0.728 0.162-0.16 0.357-0.417 0.536-0.625 0.179-0.208 0.238-0.357 0.357-0.595 0.119-0.238 0.059-0.446-0.030-0.625s-0.821-1.979-1.126-2.714c-0.297-0.714-0.598-0.618-0.821-0.629l-0.7-0.012c-0.241 0-0.634 0.091-0.965 0.456s-1.264 1.238-1.264 3.017c0 1.779 1.294 3.5 1.474 3.738s2.546 3.887 6.168 5.451c0.861 0.372 1.533 0.595 2.058 0.762 0.865 0.275 1.652 0.236 2.275 0.143 0.695-0.104 2.112-0.863 2.411-1.696s0.299-1.547 0.21-1.696c-0.091-0.149-0.331-0.239-0.688-0.418z" fill="currentColor"/></svg>
+    </a>
+    <div id="toast" class="toast"></div>
+    <script src="script.js"></script>
+</body>
+</html>
